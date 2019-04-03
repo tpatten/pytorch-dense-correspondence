@@ -9,3 +9,7 @@ paladin-23:
 iiwa-2:
   manuelli:
     path_to_data_directory: '/home/manuelli/data'
+
+Ramesses:
+  tpatten:
+    path_to_data_directory: '/home/tpatten/Data'
