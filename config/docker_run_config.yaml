@@ -13,3 +13,7 @@ iiwa-2:
 Ramesses:
   tpatten:
     path_to_data_directory: '/home/tpatten/Data'
+
+Rebecca:
+   tpatten:
+     path_to_data_directory: '/home/tpatten/Data'

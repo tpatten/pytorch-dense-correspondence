@@ -8,14 +8,14 @@ sudo pip install scipy
 sudo pip install imageio
 
 sudo pip install scikit-image
-sudo pip install tensorboard
+#sudo pip install tensorboard
 
 sudo pip install sklearn
 
 sudo pip install opencv-contrib-python
 
-sudo pip install tensorboard_logger \
-    tensorflow
+sudo pip install tensorboard_logger
+#    tensorflow
 
 sudo apt install python-tk \
     ffmpeg
