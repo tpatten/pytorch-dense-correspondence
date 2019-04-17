@@ -1,0 +1,8 @@
+logs_root_path: code/data_volume/linemod
+object_id: "ape"
+train:
+- "01"
+test:
+- "01"
+evaluation_labeled_data_path: 
+- "code/data_volume/linemod/evaluation_labeled_data/cross_scene_labels.yaml"

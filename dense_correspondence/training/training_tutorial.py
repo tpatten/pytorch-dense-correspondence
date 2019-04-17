@@ -11,8 +11,11 @@ logging.basicConfig(level=logging.INFO)
 from dense_correspondence.evaluation.evaluation import DenseCorrespondenceEvaluation
 
 def main():
+    d = 4 # the descriptor dimension
+    name = "linemod_01_%d" %(d)
+    config_x = 'linemod_01.yaml' #caterpillar_only_9.yaml
     config_filename = os.path.join(utils.getDenseCorrespondenceSourceDir(), 'config', 'dense_correspondence',
-                                   'dataset', 'composite', 'caterpillar_only_9.yaml')
+                                   'dataset', 'composite', config_x)
     config = utils.getDictFromYamlFilename(config_filename)
 
     train_config_file = os.path.join(utils.getDenseCorrespondenceSourceDir(), 'config', 'dense_correspondence',
@@ -23,8 +26,6 @@ def main():
 
     logging_dir = "code/data_volume/pdc/trained_models/tutorials"
     num_iterations = 3500
-    d = 4 # the descriptor dimension
-    name = "caterpillar_%d" %(d)
     train_config["training"]["logging_dir_name"] = name
     train_config["training"]["logging_dir"] = logging_dir
     train_config["dense_correspondence_network"]["descriptor_dimension"] = d
