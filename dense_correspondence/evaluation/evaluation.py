@@ -389,6 +389,7 @@ class DenseCorrespondenceEvaluation(object):
             if dataframe_list_temp is None:
                 print "no matches found, skipping"
                 continue
+            print "found match"
 
             pd_dataframe_list += dataframe_list_temp
             # pd_series_list.append(series_list_temp)
@@ -775,6 +776,7 @@ class DenseCorrespondenceEvaluation(object):
         if uv_a_vec is None:
             print "no matches found, returning"
             return None
+        print "found match"
 
         # container to hold a list of pandas dataframe
         # will eventually combine them all with concat

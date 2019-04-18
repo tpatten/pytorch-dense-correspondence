@@ -31,7 +31,7 @@ def main():
     train_config["dense_correspondence_network"]["descriptor_dimension"] = d
     train_config["training"]["num_iterations"] = num_iterations
 
-    TRAIN = True
+    TRAIN = False
     EVALUATE = True
 
     # All of the saved data for this network will be located in the

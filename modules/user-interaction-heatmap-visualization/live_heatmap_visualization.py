@@ -86,9 +86,10 @@ class HeatmapVisualization(object):
     def get_random_image_pair(self):
         object_id = self._dataset.get_random_object_id()
         scene_name_a = self._dataset.get_random_single_object_scene_name(object_id)
-        scene_name_b = self._dataset.get_different_scene_for_object(object_id, scene_name_a)
+        #scene_name_b = self._dataset.get_different_scene_for_object(object_id, scene_name_a)
+        scene_name_b = scene_name_a
 
-        if self._config["randomize_images"]:
+        if True:# self._config["randomize_images"]:
             image_a_idx = self._dataset.get_random_image_index(scene_name_a)
             image_b_idx = self._dataset.get_random_image_index(scene_name_b)
         else:

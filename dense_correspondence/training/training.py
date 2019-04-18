@@ -302,6 +302,8 @@ class DenseCorrespondenceTraining(object):
                 if (match_type == -1).all():
                     print "\n empty data, continuing \n"
                     continue
+                else:
+                    print "Found valid match"
 
 
                 data_type = metadata["type"][0]
